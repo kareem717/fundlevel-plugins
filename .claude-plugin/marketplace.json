@@ -1,0 +1,12 @@
+{
+  "name": "fundlevel-plugins",
+  "owner": {
+    "name": "Kareem"
+  },
+  "metadata": {
+    "description": "Fundlevel plugin marketplace",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": []
+}
