@@ -8,5 +8,11 @@
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "cold-email",
+      "source": "cold-email",
+      "description": "Cold email automation tools for PlusVibe campaigns"
+    }
+  ]
 }
