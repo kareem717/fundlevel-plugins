@@ -1,0 +1,13 @@
+{
+  "name": "influencer-sourcing",
+  "description": "Influencer sourcing tools powered by Fundlevel",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kareem"
+  },
+  "mcpServers": {
+    "fundlevel": {
+      "url": "https://mcp.fundlevel.co/mcp"
+    }
+  }
+}

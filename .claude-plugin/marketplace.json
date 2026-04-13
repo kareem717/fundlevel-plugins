@@ -13,6 +13,11 @@
       "name": "cold-email",
       "source": "./plugins/cold-email",
       "description": "Cold email automation tools for PlusVibe campaigns"
+    },
+    {
+      "name": "influencer-sourcing",
+      "source": "./plugins/influencer-sourcing",
+      "description": "Influencer sourcing tools powered by Fundlevel"
     }
   ]
 }
