@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "cold-email",
-      "source": "cold-email",
+      "source": "./plugins/cold-email",
       "description": "Cold email automation tools for PlusVibe campaigns"
     }
   ]
