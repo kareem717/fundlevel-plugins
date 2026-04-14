@@ -5,18 +5,17 @@
   },
   "metadata": {
     "description": "Fundlevel plugin marketplace",
-    "version": "1.0.0",
-    "pluginRoot": "./plugins"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "cold-email",
-      "source": "./plugins/cold-email",
+      "source": "./cold-email",
       "description": "Cold email automation tools for PlusVibe campaigns"
     },
     {
       "name": "influencer-sourcing",
-      "source": "./plugins/influencer-sourcing",
+      "source": "./influencer-sourcing",
       "description": "Influencer sourcing tools powered by Fundlevel"
     }
   ]
