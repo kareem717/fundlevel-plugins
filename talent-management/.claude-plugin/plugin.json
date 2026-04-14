@@ -1,0 +1,19 @@
+{
+  "name": "talent-management",
+  "description": "Skills for finding and engaging with influencers",
+  "version": "1.0.0",
+  "author": {
+    "name": "Fundlevel"
+  },
+  "mcpServers": {
+    "fundlevel": {
+      "url": "https://mcp.fundlevel.co/mcp"
+    },
+    "attio": {
+      "url": "https://mcp.attio.com/mcp"
+    },
+    "plusvibe": {
+      "url": "https://mcp.plusvibe.ai/mcp?api_key=REPLACE_WITH_YOUR_KEY"
+    }
+  }
+}

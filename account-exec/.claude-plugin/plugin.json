@@ -1,0 +1,16 @@
+{
+  "name": "account-exec",
+  "description": "Brand-side sales skills at Fundlevel",
+  "version": "1.0.0",
+  "author": {
+    "name": "Fundlevel"
+  },
+  "mcpServers": {
+    "attio": {
+      "url": "https://mcp.attio.com/mcp"
+    },
+    "plusvibe": {
+      "url": "https://mcp.plusvibe.ai/mcp?api_key=REPLACE_WITH_YOUR_KEY"
+    }
+  }
+}
