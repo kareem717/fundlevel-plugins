@@ -2,7 +2,6 @@
 name: objection-handling
 description: |
   Handle BRAND-SIDE sales objections for FundLevel's influencer/creator partnerships. Use when drafting reply emails to brand contacts/prospects who have raised objections such as: "what do you do?", "these creators don't fit our audience", "we're all set", "budget is allocated", "we hired an agency", anchoring to a low budget / "send me someone under $X", "send proof of work / case studies before we talk", "we already work with these creators directly", or any generic brush-off like "we'll reach out if anything changes." Also use when the user asks to craft a response to a brand lead going cold, pushing back, declining, lowballing, questioning the middleman value, or asking for credentials/vetting before a call. This is for BRAND objections only - for influencer/creator objections (creators pushing back on sponsorship pitches), use the influencer-objection-handling skill instead.
-user-invocable: true
 ---
 
 # Brand Objection Handling
@@ -48,6 +47,8 @@ Then close with a low-friction next step: "Cool if I shoot over a profile here a
 | "Send proof of work first" | Clarify you're not pitching an agency retainer | "This isn't an agency pitch — happy to do it async" + qualifying Qs |
 | "We already work with these creators directly" | 3-step: Acknowledge (you knew), Relate (best clients do too), Handle (pricing/scale/ops) | Show wholesale savings ($5K+), low-cost entry (bigboxSWE $1K post-roll), managed production |
 | "We'll reach out" | Take control of follow-up | Don't leave it open-ended, propose a cadence |
+| Hard shutdown after repeated "no" ("not the right time to engage") | **Free Value Disarm** - clarify you're not closing them, offer profiles with zero strings attached | "Being in the space, I know finding good creators can be tedious - so when solid profiles come across my desk, I like to share them with folks they could make sense for, and they're free to reach out on their own" |
+| "No budget" but Attio shows recent sponsorships + high ARR/funding | **Data-Informed Diagnostic** - reference their recent sponsorship, ask if it was a one-off or formal program | See `references/no-budget-contradicted-by-data.md` |
 
 For full handling strategies, example responses, and key principles, read `references/playbook.md`.
 
@@ -58,3 +59,11 @@ For full handling strategies, example responses, and key principles, read `refer
 - "Cool if I shoot over a profile here and there?" is the default keep-warm ask
 - "I want to understand if there's even a fit" makes you the selector, not the seller
 - Never end with "reach out if anything changes" — always own the follow-up
+- **Never validate the objection in a way that reinforces their "no."** Do NOT say things like "if your current roster is performing, no reason to shake things up" and then try to pitch. That tells them they're right to doubt your value before you've shown it.
+- **Never use "no pitch" or "no strings" disclaimers at the top of a message.** They're transparent and immediately signal that there IS a pitch. If you want to offer free value, just offer it - the actions speak for themselves.
+- **When discovery-qualifying after a soft objection, lead with evidence that you already know their business.** Name the creators they've worked with before asking about preferences. It turns a qualification form into a peer conversation.
+- **Writing style:** No em dashes - use regular dashes or commas. Give paragraphs room to breathe with blank lines between them. Casual tone, lowercase-heavy where natural.
+- **No false promises.** "I can totally get that for you" (no timeline commitment) is fine. "I'll send it shortly" or "I'll get that over to you" (makes a commitment) is not. Only promise what you're ready to deliver right now.
+- **Never assume performance.** Even 500K views could mean zero conversions. Don't say "that must have driven great results" - ask "did you find meaningful results?" Always ask, never tell.
+- **Don't pre-load talk tracks.** Ask one diagnostic question per email. Wait for the answer before deciding your next move. If you stack questions or assumptions, you lose the diagnostic value and the conversation feels like an interrogation.
+- **Use Attio data to inform your questions.** Before replying to any objection, check Attio for sponsorship history, company financials, and creator relationships. The data tells you whether a "no budget" is real or a brush-off, and gives you specific references to weave into your reply naturally.

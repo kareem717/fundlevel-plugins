@@ -28,6 +28,7 @@ Identify which objection type you're dealing with, then read the corresponding h
 |-----------|------------|-------------|
 | "Not looking for sponsorships right now" | `references/not-looking-for-sponsorships.md` | Creator declines or says sponsorships aren't a priority |
 | "What's your product?" / "What brand?" / Creator seems confused | `references/wants-more-context.md` | Creator doesn't understand FundLevel's model or needs more info before engaging |
+| Need to request analytics / Creator won't share analytics | `references/requesting-analytics.md` | You need their audience data to match them with brands, or they've pushed back on sharing it |
 
 This table grows as new objection types come in.
 

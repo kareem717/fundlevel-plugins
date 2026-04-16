@@ -190,6 +190,80 @@ This is where you show what going through FundLevel gets them that going direct 
 
 ---
 
+## Objection 10: Hard Shutdown After Repeated "No" (Free Value Disarm)
+
+**What they're really saying:** I'm done with this conversation. You've pitched me multiple times and I'm not buying. Stop selling me.
+
+**When to use this:** You've already tried the standard handles - sent profiles, offered calls, stayed casual - and they've shut you down again. This is the last play before you move on. It only works if you genuinely stop selling.
+
+**The move:** Clarify you're not trying to close them. Offer to send profiles with zero strings attached - the creators are free to reach out on their own. You're just passing along value because you're in the space.
+
+**Why this works:**
+- It removes every possible objection. There's no pitch, no call, no commitment, no cost.
+- It reframes your role from "salesperson trying to close" to "industry peer sharing relevant info."
+- The profiles speak for themselves. If a creator reaches out directly and delivers results, the brand will come back to you naturally.
+- It keeps the relationship warm without any pressure.
+
+**Example response (Railway/Sarah - shut down after multiple touchpoints):**
+> Hey Sarah,
+>
+> I hear you - and I appreciate you being straight up.
+>
+> Being in the space, I know finding good creators can be tedious - so when solid profiles come across my desk, I like to share them with folks they could make sense for, and they're free to reach out on their own.
+>
+> If you guys are ever looking to expand your roster or want help benchmarking rates, I'm around.
+>
+> Cheers,
+> Kareem
+
+**Key principles:**
+- This only works if you actually stop selling after sending it. If you follow up with another pitch, you've burned the technique.
+- "They're free to reach out on their own" is the key phrase - it removes FundLevel as the middleman objection.
+- "Benchmarking rates" is a low-friction value-add that positions you as a resource, not a vendor.
+- Set a follow-up task for 2 months out. If they reply positively, great. If not, move on.
+- Don't use "no pitch" or "no strings" disclaimers at the top of the message - those are transparent and signal there IS a pitch. Just offer the value directly and let the actions speak.
+
+---
+
+## Pattern: Discovery After a Soft Objection
+
+This isn't a standalone objection - it's a technique you layer on top of other handles (especially Objection 3, 6, 7, and 8) when the lead's reply opens a window for qualification.
+
+**When to use:** A lead has given a soft objection (not a hard no), and you want to qualify them before pushing for a call. This works best when:
+- They seem open but need more info
+- They've done creator work before (check Attio)
+- A call would be premature - you need to understand their setup first
+
+**The move:** Lead with evidence that you already know their business, then ask qualifying questions. This turns a qualification form into a peer conversation.
+
+**How to structure the questions:**
+- Are they open to flat fees vs. performance-based?
+- What content style/format do they prefer? (dedicated, integration, post-roll)
+- What's their budget range per creator?
+- Are they open to larger campaigns or just one-offs?
+- Any preference on creator size? (micro, mid, macro)
+- Open to other formats? (podcasts, LinkedIn, X/Twitter)
+
+**Example (CodeCrafters/Emily - soft objection, experienced team):**
+> Hey Emily,
+>
+> Appreciate the reply! Before I send anything over - a few quick questions so I'm not wasting your time with irrelevant profiles:
+>
+> Are you guys generally open to flat-fee sponsorships, or do you lean more performance-based?
+>
+> And content-wise - are dedicated videos on the table, or more integrations/mentions?
+>
+> Cheers,
+> Kareem
+
+**Key principles:**
+- Don't ask all the questions at once. Pick the 2-3 most important ones for this specific lead.
+- If you know they've worked with specific creators before (from Attio), name them: "I saw you guys ran something with [Creator] - are you looking for more of that style, or branching out?"
+- This approach works better than pushing for a call when the lead is experienced and knows what they want. They can answer in 30 seconds over email.
+- Don't pre-load talk tracks. Ask one round of questions, wait for the answer, then adapt your next move based on what they say.
+
+---
+
 ## The 3-Step Handle Framework
 
 Every objection reply should follow this structure:
