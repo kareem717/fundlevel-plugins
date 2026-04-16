@@ -5,6 +5,9 @@
   "author": {
     "name": "Fundlevel"
   },
+  "skills": [
+    { "name": "influencer-objection-handling", "source": "./skills/influencer-objection-handling" }
+  ],
   "mcpServers": {
     "fundlevel": {
       "url": "https://mcp.fundlevel.co/mcp"

@@ -5,6 +5,10 @@
   "author": {
     "name": "Fundlevel"
   },
+  "skills": [
+    { "name": "brand-objection-handling", "source": "./skills/brand-objection-handling" },
+    { "name": "brand-reply-handling", "source": "./skills/brand-reply-handling" }
+  ],
   "mcpServers": {
     "attio": {
       "url": "https://mcp.attio.com/mcp"

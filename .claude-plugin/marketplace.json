@@ -14,9 +14,14 @@
       "description": "Cold email automation tools for PlusVibe campaigns"
     },
     {
-      "name": "influencer-sourcing",
-      "source": "./influencer-sourcing",
-      "description": "Influencer sourcing tools powered by Fundlevel"
+      "name": "talent-management",
+      "source": "./talent-management",
+      "description": "Skills for finding and engaging with influencers"
+    },
+    {
+      "name": "account-exec",
+      "source": "./account-exec",
+      "description": "Brand-side sales skills at Fundlevel"
     }
   ]
 }
