@@ -6,7 +6,9 @@
     "name": "Fundlevel"
   },
   "skills": [
-    { "name": "plusvibe-bulk-upload", "source": "./skills/plusvibe-bulk-upload" }
+    { "name": "plusvibe-bulk-upload", "source": "./skills/plusvibe-bulk-upload" },
+    { "name": "spintax", "source": "./skills/spintax" },
+    { "name": "liquid-syntax", "source": "./skills/liquid-syntax" }
   ],
   "mcpServers": {
     "plusvibe": {
