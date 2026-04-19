@@ -85,6 +85,102 @@ nanoinfluencer-submit-similar-search({
 # 3. Same poll as before. Past hides from project 42 won't reappear.
 ```
 
+## Server-side filters
+
+`nanoinfluencer-submit-similar-search` accepts a `filters` object that nano applies **before** lookalike matching. Every field is optional — pass only what you need.
+
+| Filter | Type | Example | What it does |
+|---|---|---|---|
+| `lastPostDays` | int | `60` | Drop channels whose most recent post is older than N days. Almost always want this — default to `60`. |
+| `hasEmail` | bool | `true` | Only channels nano has an email for. Use when the user plans to cold-email the results. |
+| `gender` | `("male"\|"female"\|"neutral"\|"org")[]` | `["male","female"]` | Inferred creator gender. `org` = brand/company channel — exclude for influencer outreach. |
+| `includeCountries` | int[] | `[76]` | ISO 3166-1 numeric country codes to restrict to. Mutex with `excludeCountries`. |
+| `excludeCountries` | int[] | `[840, 826]` | ISO 3166-1 numeric codes to exclude (840=US, 826=UK, 392=JP, 76=BR). Mutex with `includeCountries`. |
+| `subs` | `[min, max]` | `[4000, 4000000]` | Subscriber count range. |
+| `views` | `[min, max]` | `[12000, 120000]` | Median views range. |
+| `posts` | `[min, max]` | `[10, 500]` | Total post count. Low `posts` = new channel. |
+| `er` | `[min, max]` | `[10, 90]` | Engagement rate as percent. |
+| `vr` | `[min, max]` | `[1, 100]` | View rate (views/subs) as percent. Filters over/under-performers. |
+
+Example — dev creators in Brazil with email and subs 4k–4M:
+
+```
+nanoinfluencer-submit-similar-search({
+  platform: "ytb",
+  id: "UCDoFiMhpOnLFq1uG4RL4xag",
+  filters: {
+    lastPostDays: 60,
+    hasEmail: true,
+    includeCountries: [76],
+    subs: [4000, 4000000],
+    er: [1, 90]
+  }
+})
+```
+
+## YouTube shorts-only matching
+
+Pass `useShortsSearch: true` to make nano match on the shorts feed instead of long-form. Rejected for X and Instagram.
+
+Use when the source creator's audience is primarily on shorts — the base embedding shifts to shorts signals so lookalikes skew toward shorts creators.
+
+```
+nanoinfluencer-submit-similar-search({
+  platform: "ytb",
+  id: "UCxxxxxx",
+  useShortsSearch: true
+})
+```
+
+## Pagination — fetching more results
+
+A finished poll returns a `pagination` block when more results exist:
+
+```json
+{
+  "status": "finished",
+  "channels": [...52 channels],
+  "pagination": {
+    "nextToken": "ytb:cbf0e0c1-...",
+    "nextIds": [...44 ids],
+    "returnedIds": [...52 ids],
+    "hint": "Pass { nextToken, nextIds, excludeIds: [...prior excludeIds, ...returnedIds] } ..."
+  }
+}
+```
+
+To get the next page: submit again with the same params plus `pagination`.
+
+**Important:** each page submit **burns daily quota** like any other search. Only paginate if the first page didn't surface enough candidates.
+
+Accumulate `excludeIds` across pages so duplicates don't reappear:
+
+```
+# page 2
+nanoinfluencer-submit-similar-search({
+  platform: "ytb",
+  id: "UCxxxxxx",
+  filters: { lastPostDays: 60, hasEmail: true },
+  pagination: {
+    nextToken: page1.pagination.nextToken,
+    nextIds:   page1.pagination.nextIds,
+    excludeIds: page1.pagination.returnedIds
+  }
+})
+
+# page 3 — accumulate excludeIds across both prior pages
+nanoinfluencer-submit-similar-search({
+  ...
+  pagination: {
+    nextToken: page2.pagination.nextToken,
+    nextIds:   page2.pagination.nextIds,
+    excludeIds: [...page1.pagination.returnedIds, ...page2.pagination.returnedIds]
+  }
+})
+```
+
+If `pagination: null` on a finished poll, you've exhausted the result set.
+
 ## Polling gotchas
 
 - The tool loops internally for ~24s. If you get `status: "running"`, that means nano is still crunching — call the tool again with the same jobId. A search typically finishes within 30–90s.

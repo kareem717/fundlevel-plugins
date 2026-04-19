@@ -54,11 +54,28 @@ If the user is starting cold, skip `groupId` — it defaults to the root project
 nanoinfluencer-submit-similar-search({
   platform: "ytb" | "twt" | "ins",
   id: "<creator id>",
-  groupId: "<project id>"  // optional
+  groupId: "<project id>",   // optional
+  filters: { ... },          // optional — server-side pre-filter
+  useShortsSearch: false,    // YouTube only
+  pagination: { ... }        // optional — for page 2+
 })
 ```
 
 Returns `{ jobId, baseChannel, searchTopics }`. **Save the jobId** — you'll re-poll it if the user wants a different `trailingWindow` later.
+
+**Filters — pass these when they match user intent:**
+- `lastPostDays: 60` almost always. Drops stale channels.
+- `hasEmail: true` when outreach is the downstream goal.
+- `subs: [min, max]` when the user specified a size range (e.g. "mid-tier, 10k–500k").
+- `includeCountries: [76]` / `excludeCountries: [840]` — ISO 3166-1 numeric codes, mutually exclusive.
+- `gender: ["male","female"]` to exclude `"org"` / brand channels.
+- `er` / `vr` ranges to filter over- or under-performers.
+
+See `references/lookalike-workflow.md` for the full filter table and examples.
+
+**`useShortsSearch: true`** (YouTube only) matches on the shorts feed instead of long-form. Use when the source creator's audience lives mainly in shorts.
+
+**Pagination:** a finished poll returns a `pagination` block when more results exist — pass it back as `pagination` on a fresh submit to fetch the next page. Each page burns one quota slot.
 
 You can override `searchTopics` with a flat `string[]` if you want to bias the search toward specific terms. **Usually don't.** The baseChannel embedding dominates ranking; custom topics are a weak secondary filter. The default (nano's auto-extracted `topic_terms`) is almost always the right call.
 
