@@ -7,7 +7,17 @@
   },
   "mcpServers": {
     "plusvibe": {
-      "url": "https://mcp.plusvibe.ai/mcp?api_key=REPLACE_WITH_YOUR_KEY"
+      "type": "http",
+      "url": "https://mcp.plusvibe.ai/mcp?api_key=${user_config.plusvibe_api_key}"
+    }
+  },
+  "userConfig": {
+    "plusvibe_api_key": {
+      "type": "string",
+      "title": "PlusVibe API key",
+      "description": "API key for the PlusVibe MCP server",
+      "sensitive": true,
+      "required": true
     }
   }
 }
