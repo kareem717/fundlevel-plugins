@@ -22,6 +22,13 @@
       "description": "API key for the PlusVibe MCP server",
       "sensitive": true,
       "required": true
+    },
+    "brightdata_api_key": {
+      "type": "string",
+      "title": "Bright Data API key",
+      "description": "Bearer token for api.brightdata.com — used by the check-prospect-news skill",
+      "sensitive": true,
+      "required": false
     }
   }
 }
